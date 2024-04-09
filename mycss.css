@@ -32,3 +32,16 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .boton-pago {
+    background-color: #007bff; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+  }
