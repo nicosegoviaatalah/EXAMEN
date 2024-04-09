@@ -1,0 +1,34 @@
+
+body {
+    background-color: rgb(32, 32, 153);
+}
+header {
+    text-align: left;
+
+}
+img {
+    max-width: 10%;
+    height: auto;
+}
+
+
+  .navbar-custom {
+    background-color:rgb(32, 32, 153); 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+  
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

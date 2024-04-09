@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss.css">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+            <img src="logo1.jpg" width="2000" height="2000"  class="d-inline-block align-top" alt="Logo">
+            
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-person"></i> Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="bi bi-cart"></i> Carro de compras
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasRightLabel">CARRO DE COMPRAS</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          Aun no tiene ningun item en el carro
+        </div>
+      </div>
+      
+
+
+      
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="magic.html">MAGIC THE GATHERING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">STAR WARS UNLIMITED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ONE PICE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Comunidad.html">COMUNIDAD</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">BUSQUEDA</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        
+        <br>
+        <br>
+        <br>
+
+        <div class="card mb-3" style="max-width: 500;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="com1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Guia para el Pre release</h2>
+                  <p class="card-text">Aca podrás ver todo lo que necesitas para el prerealese!!!</p>
+                  <p class="card-text"><small class="text-body-secondary">09-04-2024</small></p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Pincha Acá!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="modal" id="myModal">
+            <div class="modal-dial">
+              <div class="modal-content">
+                
+                <div class="modal-header">
+                  <h4 class="modal-title">10 Tips</h4>
+                </div>
+                
+                <div class="modal-body">
+                    <ol>
+            
+                   <li>Estudia previamente las cartas nueva.</li> 
+                   <li>No se te olvide llevar tus forritos. </li>
+                   <li>Arma con calma tu deck. </li>
+                   <li>No tengas miedo a preguntar. </li>
+                   <li>Juega 17 tierra</li>
+                   <li>Planifica tu estrategia. </li>
+                   <li>Mantén la calma y disfruta. </li>
+                   <li>Aprende de tus errores. </li>
+                   <li>Prioriza el removal.</li>
+                   <li>Atento a la curva de maná. </li>
+                </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+    
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+          <div class="card mb-3" style="max-width: 500;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="com2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Cartas que pueden potenciar tu deck y no lo sabias</h2>
+                  <p class="card-text">Cartas que en ciertos mazos tienen un potencial increible y no lo sabias!!!</p>
+                  <p class="card-text"><small class="text-body-secondary">09-04-2024</small></p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Pincha Acá!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="modal" id="myModal2">
+            <div class="modal-dial">
+              <div class="modal-content">
+                
+                <div class="modal-header">
+                  <h4 class="modal-title">10 Cartas</h4>
+                </div>
+                <div class="modal-body">
+                    <ol>
+            
+                   <li>Sword of War and Peace.</li> 
+                   <li>Grasp of Fate. </li>
+                   <li>Bond of Descipline. </li>
+                   <li>Guttersnipe. </li>
+                   <li>Guardian of the Gauntless</li>
+                   <li>Masterwork of engenuity. </li>
+                   <li>Royal of Assassin. </li>
+                   <li>ALoriq Oremage. </li>
+                   <li>Lightning Greaves.</li>
+                   <li>Signets. </li>
+                </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
