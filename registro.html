@@ -6,37 +6,94 @@
     <title>Registro</title>
     <link rel="stylesheet" href="mycss.css">
     <link rel="icon" type="image/x-icon" href="logo1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="caja">
-        <br>
-        <img class="img1" src="logo1.jpg" alt="logo" width="300" height="250">
-        <p class="texto" style="font-size:25px; color:white;">
-            ¡Bienvenidos a Rincon Arcano! Sumérgete en un universo de cartas coleccionables
-            donde la emoción y la estrategia se fusionan en cada partida. En nuestra tienda,
-            encontrarás una amplia gama de cartas coleccionables de diversos mundos y géneros:
-            desde poderosos hechizos mágicos hasta formidables criaturas de batalla.
-            <br>
-            ¡Únete a la emoción en Rincón Arcano!
-        </p>
-    </div>
-    <div class="todo">
-    <section class="form-register">
-        <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="ingrese su Nombre">
-        <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="ingrese Apellido">
-        <input class="controls" type="text" name="Usuario" id="Usuario" placeholder="ingrese su Usuario">
-        <input class="controls" type="text" name="Correo" id="Correo" placeholder="ingrese su Correo">
-        <input class="controls" type="text" name="Telefono" id="Telefono" placeholder="ingrese su Telefono">
-        <input class="controls" type="text" name="Ciudad" id="Ciudad" placeholder="ingrese su Ciudad">
-        <input class="controls" type="text" name="Comuna" id="Comuna" placeholder="ingrese su Comuna">
-        <input class="controls" type="text" name="Direccion" id="Direccion" placeholder="ingrese su Direccion">
-        <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="ingrese su Descripcion">
-        <input class="controls" type="password" name="Contraseña" id="Contraseña" placeholder="Crea una Contraseña">
-        <input class="controls" type="password" name="Confirmar Contraseña" id="Contraseña" placeholder="Confirme su Contraseña">
-        <p>Estoy de Acuerdo con TERMINOS Y CONDICIONES</p>
-        <input class="bottons" type="submit" value="Registrar">
-    </section>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="funciones.js"></script>
+    <div class="row">
+        <form action="" id="formulario" class="col-6 text-center mx-auto shadow-lg mt-5">
+            <div class="my-3">
+                <h4>Formulario de registro</h4>
+            </div>
+            
+            <div class="form-floating w-50 mx-auto mb-3">
+                <input type="text" class="form-control" id="txtRut" name="txtRut" placeholder="Ingrese su rut"
+                    required>
+                <label for="txtRut">Rut</label>
+            </div>
+            <div class="form-floating w-50 mx-auto mb-3">
+                <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre"
+                    required>
+                <label for="txtNombre">Nombre</label>
+            </div>
+            <div class="row mx-auto">
+                <div class="col mb-3">
+                    <div class="form-floating w-50 ms-auto">
+                        <input type="text" class="form-control" id="txtAppaterno" name="txtAppaterno"
+                            placeholder="Apellido paterno" required>
+                        <label for="txtAppaterno">Apellido paterno</label>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="form-floating w-50">
+                        <input type="text" class="form-control" id="txtApmaterno" name="txtApmaterno"
+                            placeholder="Apellido materno" required>
+                        <label for="txtApmaterno">Apellido materno</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating w-50 mx-auto mb-3">
+                <input type="date" class="form-control" id="date" name="date" placeholder="date" required>
+                <label for="date"> Edad<label>
+            </div>
+
+            <div class="form-floating w-50 mx-auto mb-3">
+                <input type="number" class="form-control" id="txtEdad" name="txtEdad" placeholder="Ingrese su edad"
+                    required>
+                <label for="txtEdad">Edad</label>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <label for="">Seleccione su genero</label>
+                </div>
+                <div class="col mb-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Masculino" name="optGenero"
+                            id="optGenero1">
+                        <label class="form-check-label" for="optGenero1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Femenino" name="optGenero"
+                            id="optGenero2">
+                        <label class="form-check-label" for="optGenero2">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" value="Otro" name="optGenero" id="optGenero3">
+                        <label class="form-check-label" for="optGenero3">
+                            Otro
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating w-50 mx-auto mb-3">
+                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="Telefono"
+                    required>
+                <label for="txtTelefono">Telefono</label>
+            </div>
+            <div class="w-50 mx-auto mb-3">
+                <button type="button" id="btnEnviar" class="btn btn-custom">Ingresar</button>
+                <button type="button" id="btnGenerar" class="btn btn-custom">Generar Carta</button>
+            </div>
+        </form>
+
+
 </body>
 </html>

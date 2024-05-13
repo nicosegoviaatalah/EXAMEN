@@ -91,7 +91,7 @@ img {
 
 body{
     background-color: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgb(43, 79, 196) 0%, rgb(130, 169, 214) 100%);
 }
 
 .texto1{
@@ -175,4 +175,9 @@ body{
     color: white;
     margin: 16px;
     font-size: 16px;
+}
+
+.btn-custom {
+    background-color: #ff0000; 
+    color: white; 
 }
