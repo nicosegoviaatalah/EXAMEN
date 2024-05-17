@@ -158,3 +158,37 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.magicthegathering.io/v1/cards')
+        .then(response => response.json())
+        .then(data => {
+            const cardsContainer = document.getElementById('cards-container');
+            const cards = data.cards.filter(card => card.imageUrl).slice(0, 120); // Limiting to 20 cards with images
+
+            cards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.classList.add('col-md-3', 'mb-4');
+
+                cardElement.innerHTML = `
+                    <div class="card h-100">
+                        <img src="${card.imageUrl}" class="card-img-top" alt="${card.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${card.name}</h5>
+                            <p class="card-text">${card.text || ''}</p>
+                        </div>
+                    </div>
+                `;
+
+                cardsContainer.appendChild(cardElement);
+            });
+        })
+        .catch(error => console.error('Error fetching the cards:', error));
+});
+
+
+
+
+
